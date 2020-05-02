@@ -2,7 +2,7 @@
 pipeline {
    agent any
    tools{
-      def MAVEN_HOME
+      maven
    }
    stages {
       stage('Preparation') { 
