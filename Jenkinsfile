@@ -2,7 +2,7 @@
 pipeline {
    agent any
    tools{
-      maven 'Maven 3.6.3'
+      def MAVEN_HOME
    }
    stages {
       stage('Preparation') { 
