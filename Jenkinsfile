@@ -14,7 +14,7 @@ pipeline {
       stage('Build') {
          steps{
 
-            sh '''mvn clean test'''
+            sh 'mvn -Dmaven.test.failure.ignore=true install'
 
          }
 
